@@ -3,7 +3,9 @@
 /* App Module */
 
 var simpleChat = angular.module('simpleChat', [
-    'ngRoute'
+    'ngRoute',
+    'simpleChatControllers',
+    'simpleChatServices'
 ]);
 
 

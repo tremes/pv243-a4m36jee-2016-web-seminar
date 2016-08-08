@@ -10,15 +10,15 @@
     <div class="panel panel-default">
         <div class="panel-heading">Post Message</div>
         <div class="panel-body">
-            <form>
+            <form ng-submit="submit()" ng-controller="NewMessageCtrl">
                 <div class="form-group">
                     <label for="name" class="control-label">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" required="required"/>
+                    <input type="text" id="name" name="name" class="form-control" required="required" ng-model="name">
                 </div>
 
                 <div class="form-group">
                     <label for="message" class="control-label">Message:</label>
-                    <input type="text" id="message" name="message" class="form-control" required="required"/>
+                    <input type="text" id="message" name="message" class="form-control" required="required" ng-model="text"/>
                 </div>
 
                 <div class="form-group">
